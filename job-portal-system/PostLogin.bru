@@ -1,0 +1,23 @@
+meta {
+  name: PostLogin
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:9090/api/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "bablu@gmail.com",
+    "password": "bablu123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

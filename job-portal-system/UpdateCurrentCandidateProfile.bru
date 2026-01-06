@@ -1,0 +1,29 @@
+meta {
+  name: UpdateCurrentCandidateProfile
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:9090/api/candidates/me
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9DQU5ESURBVEUiLCJ1c2VySWQiOjIsInN1YiI6IlN1bWFudEBleGFtcGxlLmNvbSIsImlhdCI6MTc2NzY4MDU3NSwiZXhwIjoxNzY3NzY2OTc1fQ.phQRhXnAFoZLaqRtFxzq2V_5N8I9R08yIQK26YIgdQ4
+}
+
+body:json {
+  {
+    "name": "Sumant Kumar",
+    "experience": 5,
+    "skills": ["Java", "Spring", "Docker"],
+    "location": "New York"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

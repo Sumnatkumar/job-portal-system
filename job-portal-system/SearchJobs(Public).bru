@@ -1,0 +1,15 @@
+meta {
+  name: SearchJobs(Public)
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:9090/api/jobs/search
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

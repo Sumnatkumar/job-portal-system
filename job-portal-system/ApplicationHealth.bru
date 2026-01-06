@@ -1,0 +1,15 @@
+meta {
+  name: ApplicationHealth
+  type: http
+  seq: 20
+}
+
+get {
+  url: http://localhost:9090/actuator/health
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

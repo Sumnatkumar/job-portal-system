@@ -1,0 +1,15 @@
+meta {
+  name: DeleteCurrentCandidateAccount
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:9090/api/candidates/me
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

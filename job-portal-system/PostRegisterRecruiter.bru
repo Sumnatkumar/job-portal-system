@@ -1,0 +1,25 @@
+meta {
+  name: PostRegisterRecruiter
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:9090/api/auth/register/recruiter
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Bablu Kumaar",
+    "company": "Google",
+    "email": "bablu@gmail.com",
+    "password": "bablu123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

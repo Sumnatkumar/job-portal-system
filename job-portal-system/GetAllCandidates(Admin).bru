@@ -1,0 +1,15 @@
+meta {
+  name: GetAllCandidates(Admin)
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:9090/api/candidates
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

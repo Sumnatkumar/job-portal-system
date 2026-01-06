@@ -1,0 +1,24 @@
+meta {
+  name: PostRegisterCandidate
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:9090/api/auth/register/candidate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Sumant Kumar",
+    "email": "sumant@gmail.com",
+    "password": "sumant123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

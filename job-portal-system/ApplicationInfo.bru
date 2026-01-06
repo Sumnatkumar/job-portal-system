@@ -1,0 +1,15 @@
+meta {
+  name: ApplicationInfo
+  type: http
+  seq: 21
+}
+
+get {
+  url: http://localhost:9090/actuator/info
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
